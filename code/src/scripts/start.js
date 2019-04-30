@@ -45,7 +45,7 @@ function start(material, video) {
 	
 	// create atToolkitContext
 	var arToolkitContext = new THREEx.ArToolkitContext({
-		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + 'lib/data/camera_para',
+		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + 'assets/camera_para',
 		detectionMode: 'mono',
 		maxDetectionRate: 30,
 		canvasWidth: 80*3,
@@ -69,7 +69,7 @@ function start(material, video) {
 	scene.add(markerRoot)
 	var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
 		type : 'pattern',
-		patternUrl : THREEx.ArToolkitContext.baseURL + 'lib/data/qr-test'
+		patternUrl : THREEx.ArToolkitContext.baseURL + 'assets/qr-test'
 	})
 	
 	// build a smoothedControls
