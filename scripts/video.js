@@ -26,7 +26,7 @@ function createMaterial() {
 	texture.magFilter = THREE.LinearFilter;
 	texture.format = THREE.RGBFormat;
 
-	var material = new THREE.MeshBasicMaterial({
+	var material = new THREE.MeshNormalMaterial({
 		map: texture,
 		color: '#ffffff',
 		side: THREE.FrontSide
